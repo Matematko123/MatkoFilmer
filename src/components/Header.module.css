@@ -1,0 +1,10 @@
+
+ul {
+    padding: 1rem 0rem;
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    font-size: 1.4rem;
+  }
+  

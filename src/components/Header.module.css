@@ -1,10 +1,89 @@
+.headerContainer {
+  background-color: #141414;
+  position: fixed;
+  width: 100%;
+}
 
-ul {
-    padding: 1rem 0rem;
-    list-style: none;
-    display: flex;
-    align-items: center;
-    gap: 1rem;
-    font-size: 1.4rem;
-  }
-  
+.header {
+  display: flex;
+  gap: 3rem;
+  align-items: center;
+  height: 8rem;
+}
+
+.logo img {
+  height: 4rem;
+  image-rendering: -moz-crisp-edges; /* Firefox */
+  image-rendering: -o-crisp-edges; /* Opera */
+  image-rendering: -webkit-optimize-contrast; /* Webkit (non-standard naming) */
+  image-rendering: crisp-edges;
+  -ms-interpolation-mode: nearest-neighbor; /* IE (non-standard property) */
+}
+
+.nav {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.ul {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  font-size: 1.4rem;
+  color: #e5e5e5;
+}
+
+.ul li {
+  transition: all 0.15s;
+}
+
+.ul li:hover {
+  color: white;
+}
+
+.ul li a {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.searchIcon {
+  color: white;
+  font-size: 2rem;
+}
+
+.form {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.form input {
+  border: 1.5px solid #e5e5e5;
+  padding: 0.25rem;
+  height: 1.6rem;
+  width: 15rem;
+  background-color: transparent;
+  color: white;
+}
+
+.form button {
+  border: none;
+  background-color: transparent;
+}
+
+.searchIconForm {
+  color: white;
+  font-size: 1.6rem;
+  margin-left: -4.5rem;
+  margin-top: 0.2rem;
+
+  transition: all 0.15s;
+}
+
+.searchIconForm:hover {
+  color: red;
+  font-weight: bold;
+}

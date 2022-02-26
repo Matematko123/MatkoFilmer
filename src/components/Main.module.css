@@ -1,0 +1,92 @@
+.container {
+  background-image: url('./../assets/img/MoviePoster.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+
+  height: 1080px;
+  image-rendering: -webkit-optimize-contrast;
+}
+
+.title {
+  width: 30rem;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  margin-top: 20rem;
+}
+
+.text {
+  width: 50rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+}
+
+.topText {
+  font-size: 7rem;
+  font-weight: bold;
+}
+
+.bottomText {
+  font-size: 6rem;
+  font-weight: 200;
+  margin-top: -4.1rem;
+}
+
+.top10 {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.top10 span {
+  font-size: 1.8rem;
+}
+
+.text p {
+  font-size: 1.8rem;
+  font-weight: 300;
+}
+
+.buttons {
+  display: flex;
+  gap: 1rem;
+}
+
+.playBtn {
+  padding: 0.6rem 1.4rem;
+  font-size: 1.5rem;
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  background-color: white;
+  border: 1px solid;
+  border-radius: 0.3rem;
+  font-weight: 800;
+
+  transition: all 0.15s;
+}
+
+.playBtn:hover {
+  font-size: 1.65rem;
+  cursor: pointer;
+}
+
+.infoBtn {
+  padding: 0.6rem 1.4rem;
+  font-size: 1.5rem;
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+  background-color: rgba(255, 255, 255, 0.1);
+  border: 1px solid;
+  border-radius: 0.3rem;
+  color: white;
+
+  transition: all 0.15s;
+}
+
+.infoBtn:hover {
+  font-size: 1.65rem;
+  cursor: pointer;
+}

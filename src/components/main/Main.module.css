@@ -1,9 +1,9 @@
 .container {
-  background-image: url('./../assets/img/MoviePoster.png');
+  background-image: url('../../assets/img/MoviePoster.png');
   background-repeat: no-repeat;
-  background-size: contain;
+  background-size: cover;
 
-  height: 1080px;
+  height: 100vh;
   image-rendering: -webkit-optimize-contrast;
 }
 
@@ -12,7 +12,7 @@
   text-align: center;
   display: flex;
   flex-direction: column;
-  margin-top: 20rem;
+  margin-top: 14.5rem;
 }
 
 .text {
@@ -89,4 +89,19 @@
 .infoBtn:hover {
   font-size: 1.65rem;
   cursor: pointer;
+}
+
+.movieList {
+  margin-top: 2rem;
+}
+
+.movieList span {
+  font-size: 1.95rem;
+  display: block;
+  margin-bottom: 0.5rem;
+}
+
+.prevArrow {
+  font-size: 4rem;
+  background-color: red;
 }

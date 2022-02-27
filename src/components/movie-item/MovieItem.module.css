@@ -1,0 +1,35 @@
+.movieItem {
+  width: 12.1rem;
+  height: 17.12rem;
+  background-repeat: no-repeat;
+  background-size: contain;
+  margin-right: 2rem;
+  border-radius: 0.5rem;
+
+  border: 1px solid transparent;
+
+  transition: all 0.15s;
+}
+
+.movieItem:hover {
+  width: 35rem;
+  background-color: #141414;
+}
+
+.movieItem span {
+  margin-left: 12.9rem;
+  font-size: 0.2rem;
+  color: #e5e5e5;
+}
+
+.movieItem .title {
+  font-size: 1.8rem;
+}
+
+.movieItem .date {
+  font-size: 1.5rem;
+}
+
+.movieItem .desc {
+  font-size: 0.8rem;
+}

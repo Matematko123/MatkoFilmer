@@ -2,9 +2,9 @@ import React, { useState } from 'react';
 
 import styles from './Header.module.css';
 
-import Container from './reusable/Container';
-import logo from '../assets/img/logo.png';
-import profileImg from '../assets/img/ProfileIMG.png';
+import Container from '../reusable/Container';
+import logo from '../../assets/img/logo.png';
+import profileImg from '../../assets/img/ProfileIMG.png';
 
 import { GoSearch, GoTriangleDown } from 'react-icons/go';
 

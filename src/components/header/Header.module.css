@@ -2,13 +2,14 @@
   background-color: #141414;
   position: fixed;
   width: 100%;
+  z-index: 1;
 }
 
 .header {
   display: flex;
   gap: 3rem;
   align-items: center;
-  height: 8rem;
+  height: 7rem;
 }
 
 .logo img {
@@ -86,4 +87,10 @@
 .searchIconForm:hover {
   color: red;
   font-weight: bold;
+}
+
+@media (max-width: 500px) {
+  .logo {
+    display: none;
+  }
 }

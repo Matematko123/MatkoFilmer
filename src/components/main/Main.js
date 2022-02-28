@@ -6,13 +6,14 @@ import styles from './Main.module.css';
 import Container from '../reusable/Container';
 import MovieItem from '../movie-item/MovieItem';
 import MovieImg from '../../assets/img/movieImg.jpg';
+import MoviePoster from '../../assets/img/netflix-gradient.png';
 
 import topImg from '../../assets/img/Top10Badge.png';
 import Slider from 'react-slick';
 
 import { GoTriangleRight, GoTriangleLeft, GoInfo } from 'react-icons/go';
 
-function SamplePrevArrow(props) {
+export function SamplePrevArrow(props) {
   const { className, style, onClick } = props;
   return (
     <GoTriangleLeft
@@ -29,7 +30,7 @@ function SamplePrevArrow(props) {
   );
 }
 
-function SampleNextArrow(props) {
+export function SampleNextArrow(props) {
   const { className, style, onClick } = props;
   return (
     <GoTriangleRight
@@ -92,16 +93,19 @@ function Main() {
     },
   };
 
-  useEffect(() => {
+  function getMovieData() {
     const randomCharacter =
       alphabet[Math.floor(Math.random() * alphabet.length)];
 
     axios
       .get(`https://api.tvmaze.com/search/shows?q=${randomCharacter}`)
       .then((response) => {
-        console.log(response.data);
         setMovieData(response.data);
       });
+  }
+
+  useEffect(() => {
+    getMovieData();
   }, []);
 
   return (
@@ -109,24 +113,24 @@ function Main() {
       <Container>
         <div className={styles.text}>
           <div className={styles.title}>
-            <span className={styles.topText}>YANIMDA</span>
-            <span className={styles.bottomText}>KAL</span>
+            <span className={styles.topText}>MATKO</span>
+            <span className={styles.bottomText}>FILMER</span>
           </div>
           <div className={styles.top10}>
             <img src={topImg} alt="" srcset="" />
-            <span>Best drama in Turkey</span>
+            <span>Top streaming service of 2020</span>
           </div>
           <p>
-            Learning to take care of himself at a young age and working hard
-            Emir, who has an important position in the world, one day becomes a
-            street singer. He meets the girl and his life changes.
+            Enjoy free streams, tv shows and movies for free!
+            <br />
+            Hover over movies to see more info!
           </p>
           <div className={styles.buttons}>
             <button className={styles.playBtn}>
               <GoTriangleRight></GoTriangleRight> Play
             </button>
             <button className={styles.infoBtn}>
-              <GoInfo></GoInfo> More Info
+              <GoInfo></GoInfo> Contact us
             </button>
           </div>
         </div>

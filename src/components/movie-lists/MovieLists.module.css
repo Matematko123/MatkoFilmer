@@ -1,15 +1,7 @@
 .container {
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-  height: 100vh;
-  background: rgb(20, 20, 20);
-  background: linear-gradient(
-    180deg,
-    rgba(20, 20, 20, 1) 5%,
-    rgba(220, 26, 40, 0.5515021008403361) 43%,
-    rgba(20, 20, 20, 1) 100%
-  );
+  margin-top: 50px;
+
+  image-rendering: -webkit-optimize-contrast;
 }
 
 .title {
@@ -17,7 +9,6 @@
   text-align: center;
   display: flex;
   flex-direction: column;
-  margin-top: 14.5rem;
 }
 
 .text {
@@ -111,29 +102,43 @@
   background-color: red;
 }
 
+.movieItem {
+  width: 12rem;
+  height: 16.8rem;
+  background-repeat: no-repeat;
+  background-size: contain;
+  margin-right: 2rem;
+  border-radius: 0.5rem;
+  color: black;
+
+  border: 2px solid black;
+
+  transition: all 0.15s;
+}
+
+.movieItem:hover {
+  width: 35rem;
+  background-color: white;
+}
+
+.movieItem span {
+  margin-left: 12.9rem;
+  font-size: 0.2rem;
+  color: black;
+}
+
 @media (max-width: 1340px) {
-  .container {
-    height: 90vh;
-  }
 }
 
 @media (max-width: 1140px) {
-  .container {
-    height: 73vh;
-  }
 }
 
 @media (max-width: 500px) {
-  .container {
-    height: 90vh;
-  }
-
   .title {
     width: 30rem;
     text-align: center;
     display: flex;
     flex-direction: column;
-    margin-top: 14.5rem;
   }
 
   .text {

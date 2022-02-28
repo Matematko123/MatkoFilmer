@@ -17,6 +17,11 @@ a {
   text-decoration: inherit;
 }
 
+.movieList {
+  display: flex;
+  flex-direction: column;
+}
+
 @media (max-width: 1340px) {
   html {
     font-size: 62.5%;

@@ -6,6 +6,8 @@ import Container from '../reusable/Container';
 import logo from '../../assets/img/logo.png';
 import profileImg from '../../assets/img/ProfileIMG.png';
 
+import SearchBox from '../reusable/SearchBox';
+
 import { GoSearch, GoTriangleDown } from 'react-icons/go';
 
 function Header() {

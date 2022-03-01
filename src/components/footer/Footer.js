@@ -1,6 +1,7 @@
 import styles from './Footer.module.css';
 
 import Container from '../reusable/Container';
+import SearchBox from '../reusable/SearchBox';
 
 import { FaFacebook, FaInstagram, FaTwitter, FaYoutube } from 'react-icons/fa';
 

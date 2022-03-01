@@ -68,6 +68,17 @@
   width: 15rem;
   background-color: transparent;
   color: white;
+
+  transition: all 0.15s;
+}
+
+.form input:focus {
+  border: 2px solid #e5e5e5;
+  height: 1.8rem;
+
+  border-radius: 0px !important;
+  -webkit-appearance: none;
+  width: 18rem;
 }
 
 .form button {

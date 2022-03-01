@@ -111,14 +111,13 @@
   border-radius: 0.5rem;
   color: black;
 
-  border: 2px solid black;
-
   transition: all 0.15s;
 }
 
 .movieItem:hover {
   width: 35rem;
   background-color: white;
+  border: 1px solid white;
 }
 
 .movieItem span {

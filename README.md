@@ -9,9 +9,9 @@ Movie viewer app, dynamic movie fetching
 <h2> FRONTEND </h2> 
 <ul>
   <li> Axios fetching </li>
-  <li> Trailer card </li>
-  <li> Profile page </li>
-
+  <li> Movie card </li>
+  <li> Dynamic movies </li>
+  <li> Responsive </li>
 </ul>
 
 <hr>
